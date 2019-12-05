@@ -1,8 +1,8 @@
 * { box-sizing: border-box; }
 
 @font-face {
-  font-family: 'brewery';
-  src: url('AmericanBreweryRough.ttf') format('truetype');
+ font-family: 'Lora', serif;
+  src: url('Lora-Regular.ttf') format('truetype');
 }
 body { background-color: white; color: black; font-size: 14px; }
 
@@ -55,7 +55,7 @@ margin:10px;}
 .main-header {
   margin: 20px 0 0 40px; 
   font-size: 2rem;
-  font-family: "brewery", sans-serif;
+  font-family: Lora, sans-serif;
 }
 
 #main_logo
@@ -63,11 +63,34 @@ margin:10px;}
   width: 280px;
   margin-left:45%;
 
-  -webkit-transition: rotate(180deg) 3s inline linear;
+ }
 
+ @-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
 }
 
+.rotating {
+    -webkit-animation: rotating 4s linear infinite;
+}
 
+/* @-webkit-keyframes .main_logo {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.main_logo {
+    -webkit-animation: rotating 2s linear infinite;
+}
+
+*/
 
 
 
