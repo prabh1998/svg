@@ -1,6 +1,6 @@
 (() => {
     // try to get the object and do stuff with it
-    let seeMoreButtons = document.querySelectorAll('.see-more'),
+    let seeMoreButtons = document.querySelectorAll('.number'),
         chartLink = document.querySelectorAll('.chart-link'),
         popOver = document.querySelector('.popover');
 
@@ -17,16 +17,16 @@
         }
     })
 
-    const waypoint2 = new Waypoint({
+    // const waypoint2 = new Waypoint({
         // what element is this waypoint looking at?
         // the handler will fire when it scrolls into view
 
-        element: document.getElementById('beer3'),
+        // element: document.getElementById('beer3'),
         // what should we do when we hit the waypoint? this is up to you.
         // you can trigger animation, do an AJAX call... whatever
-        handler: function(direction) {
-          console.log('Scrolled to waypoint 2!');
-        },
+        // handler: function(direction) {
+        //   console.log('Scrolled to waypoint 2!');
+        // },
 
         offset: 200
     })
