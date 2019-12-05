@@ -22,6 +22,7 @@ section > div:not(.text-wrapper) {
   text-align: center;
   position: relative;
 }
+
 .img_wrapper{
   align-content: center;
   margin-left: 20%;
@@ -61,11 +62,12 @@ margin:10px;}
 {
   width: 280px;
   margin-left:45%;
+
+  -webkit-transition: rotate(180deg) 3s inline linear;
+
 }
 
-.beer-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid white; }
 
-p > span { display: block; padding-bottom: 12px; }
 
 
 
