@@ -1,6 +1,7 @@
 (() => {
     // try to get the object and do stuff with it
     let seeMoreButtons = document.querySelectorAll('.see-more'),
+        chartLink = document.querySelectorAll('.chart-link'),
         popOver = document.querySelector('.popover');
 
     const waypoint = new Waypoint({
@@ -32,19 +33,19 @@
 
     const svgGraphic = document.querySelector(".svg-wrapper");
 
-    // svgGraphic.addEventListener("click", function() {
+    svgGraphic.addEventListener("click", function() {
     //     console.log(this);
     // })
     // show the popover
     function showPopover(beerdata, el) {
-        popOver.querySelector(".ipa-rating").textContent = `IPA Rating: ${beerdata.IpaRating}`;
-        popOver.querySelector(".ratings").textContent = `IPA Rating: ${beerdata.ratings}`;
-        popOver.querySelector(".beer-description").textContent = beerdata.description;
+        popOver.querySelector(".stats").textContent = `Material Usage: ${beerdata.PERCENTAGE}`;
+        popOver.querySelector(".recycle").textContent = `IPA Rating: ${beerdata.RECYCLE}`;
+    //     popOver.querySelector(".beer-description").textContent = beerdata.description;
 
-        popOver.classList.add('show-popover');
+    //     popOver.classList.add('show-popover');
 
-        el.appendChild(popOver);
-    }
+    //     el.appendChild(popOver);
+    // }
 
     // do our fetch call to the database
     function fetchData() {
@@ -55,7 +56,7 @@
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            showPopover(data, targetElement);
+            showtextover(data, targetElement);
         })
         .catch(function(error) {
             console.log(error);
