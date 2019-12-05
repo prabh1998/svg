@@ -41,9 +41,13 @@
          
         <h3>Recycled materials percentage in last 5 years</h3>
         <section id="bar-chart">
-         
-             
-            <object data="images/bar chart.svg" type="image/svg+xml"  id="chart"></object>
+            {{#each info}}
+            <a href="{{ID}}" class="chart-link">
+              <span>
+                  <object data="images/bar chart.svg" type="image/svg+xml"  id="chart"></object>
+              </span>
+            </a>
+            {{/info}}
          
         </section>
 
@@ -68,6 +72,6 @@
 
       
     </main>
-    <script src="js/main.js"></script>
+    
 </body>
 </html>
