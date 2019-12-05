@@ -50,7 +50,8 @@ section p { color: black; width: 70%; font-size: 1.25rem; }
 .hidden { display: none; }
 
 .svg-graphic { width: 200px; 
-margin:10px;}
+margin:10px;
+shadow: 5px 2px 5px 2px;}
 
 .main-header {
   margin: 20px 0 0 40px; 
@@ -77,21 +78,6 @@ margin:10px;}
 .rotating {
     -webkit-animation: rotating 4s linear infinite;
 }
-
-/* @-webkit-keyframes .main_logo {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
-}
-.main_logo {
-    -webkit-animation: rotating 2s linear infinite;
-}
-
-*/
-
 
 
 
@@ -124,4 +110,152 @@ h3{
   width: 150px;
   height: 150px;
 }
+ /*@-webkit-keyframes symbol {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
 
+.symbol {
+    -webkit-animation: rotating 4s linear infinite;
+}
+*/
+/*mobile*/
+
+.siteContainer{
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0px 10px 0px 10px;
+}
+#main_logo
+{
+  width: 150px;
+  margin-left:25%;
+
+ }
+.svg-graphic { 
+  width: 100px; 
+margin:10px;
+shadow: 5px 2px 5px 2px;}
+
+.main-header {
+  margin: 20px 0 0 20px; 
+  font-size: 2rem;
+  font-family: Lora, sans-serif;
+}
+.text-wrapper-heading {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  text-align: center;
+  margin-left: 180px;
+  font-size: 18px;
+  margin-left: 15%;
+}
+#chart{ width: 250px;
+  margin-top: 25px;
+ 
+}
+.R p{
+  font-size: 14px bold;
+  margin-left: 10%;
+/*   box-shadow: 2px 4px 2px 2px; */
+  
+}
+.R p:hover{
+  color::#4EC483;
+}
+.symbol
+{
+  width: 100px;
+  height: 100px;
+}
+
+
+/*tablet*/
+@media screen and (min-width: 400px)
+{
+  
+}
+@media screen and (min-width:620px) {
+.siteContainer{
+    margin:10px;
+   
+  }
+#main_logo
+{
+  width: 300px;
+  margin-left:25%;
+
+ }
+.svg-graphic { 
+  width: 110px; 
+  margin: 10px;
+ 
+}
+
+.main-header {
+  margin: 20px 0 0 20px; 
+  font-size: 2rem;
+  font-family: Lora, sans-serif;
+}
+.text-wrapper-heading {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  text-align: center;
+  margin-left: 180px;
+  font-size: 18px;
+  margin-left: 15%;
+}
+#chart{ width: 400px;
+  margin-top: 25px;
+ 
+}
+.R p{
+  font-size: 32px bold;
+  margin-left: 10%;
+}
+.symbol
+{
+  width: 100px;
+  height: 100px;
+}
+  
+}
+
+/*desktop*/
+
+@media screen and (min-width: 1200px) {
+  
+.siteContainer{
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0px 10px 0px 10px;
+}
+  #main_logo
+{
+  width: 300px;
+  margin-left:35%;
+
+ }
+ 
+.main-header:hover{
+  color: red;}
+    
+.text-wrapper-heading:hover{
+      color: yellow;
+    }
+ #chart{ width: 550px;
+  margin-top: 25px;
+  transform-box: 
+ 
+}
+  .R p:hover{
+  color:red;
+}
+  
+}
