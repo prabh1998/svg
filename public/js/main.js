@@ -4,18 +4,18 @@
         chartLink = document.querySelectorAll('.chart-link'),
         popOver = document.querySelector('.popover');
 
-    const waypoint = new Waypoint({
-        // what element is this waypoint looking at?
-        // the handler will fire when it scrolls into view
-        element: document.getElementById('beer2'),
-        // what should we do when we hit the waypoint? this is up to you.
-        // you can trigger animation, do an AJAX call... whatever
-        handler: function(direction) {
-          console.log('Scrolled to waypoint!');
-        //   this.element.innerHTML += `
-        //   <p>Added this with Waypoint! We are scrolling ${direction}</p>`;
-        }
-    })
+    // const waypoint = new Waypoint({
+    //     // what element is this waypoint looking at?
+    //     // the handler will fire when it scrolls into view
+    //     element: document.getElementById('beer2'),
+    //     // what should we do when we hit the waypoint? this is up to you.
+    //     // you can trigger animation, do an AJAX call... whatever
+    //     handler: function(direction) {
+    //       console.log('Scrolled to waypoint!');
+    //     //   this.element.innerHTML += `
+    //     //   <p>Added this with Waypoint! We are scrolling ${direction}</p>`;
+    //     }
+    // })
 
     // const waypoint2 = new Waypoint({
         // what element is this waypoint looking at?
@@ -28,8 +28,8 @@
         //   console.log('Scrolled to waypoint 2!');
         // },
 
-        offset: 200
-    })
+        // offset: 200
+    // })
 
     const svgGraphic = document.querySelector(".svg-wrapper");
 
